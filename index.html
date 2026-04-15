@@ -338,7 +338,7 @@
                         <h2 class="font-display font-bold text-4xl md:text-6xl text-blue-600 mb-3 tracking-tight">Lost on Campus</h2>
                         <p class="text-slate-500 font-sans text-lg tracking-wide">Recent reports from the community</p>
                     </div>
-                    <button class="hidden md:flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors font-display animate-on-scroll">
+                    <button id="btn-view-all" class="hidden md:flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors font-display animate-on-scroll">
                         View all items 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </button>
@@ -348,7 +348,7 @@
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-12 items-stretch px-2" id="items-slider" style="scrollbar-width: none; -ms-overflow-style: none;">
                     
                     <!-- Card 1: Book -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 0ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 0ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=1000" alt="Book" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -385,7 +385,7 @@
                     </div>
 
                     <!-- Card 2: Wallet -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 200ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 200ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="/wallet.png" alt="Wallet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -421,7 +421,7 @@
                     </div>
                     
                     <!-- Card 3: Headphones -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 400ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 400ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000" alt="Headphones" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -457,7 +457,7 @@
                     </div>
 
                     <!-- Card 4: Water Bottle -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 600ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 600ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="/bottle.png" alt="Water Bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -493,7 +493,7 @@
                     </div>
 
                     <!-- Card 5: Charger -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 800ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 800ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=1000" alt="Charger" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -522,7 +522,7 @@
                     </div>
 
                     <!-- Card 6: ID Lanyard -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 900ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 900ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&q=80&w=1000" alt="Lanyard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -551,7 +551,7 @@
                     </div>
 
                     <!-- Card 7: Calculator -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 1000ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 1000ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="/calc.png" alt="Calculator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -579,7 +579,7 @@
                     </div>
 
                     <!-- Card 8: Umbrella -->
-                    <div class="min-w-[85vw] md:min-w-[350px] snap-center bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 1100ms;">
+                    <div class="min-w-[85vw] md:min-w-[350px] snap-center cursor-pointer js-item-card bg-white/70 backdrop-blur-md border border-white/50 rounded-3xl p-5 shadow-lg transition-all duration-300 group animate-on-scroll opacity-0 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 hover:bg-white hover:border-blue-400" style="transition-delay: 1100ms;">
                         <div class="h-64 w-full bg-slate-100 rounded-2xl overflow-hidden mb-5 relative">
                             <img src="https://images.unsplash.com/photo-1557004396-66e4174d7bf6?auto=format&fit=crop&q=80&w=1000" alt="Umbrella" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -749,6 +749,70 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal Backdrop -->
+        <div id="item-modal-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] hidden opacity-0 transition-opacity duration-300 pointer-events-auto"></div>
+
+        <!-- Detail Modal -->
+        <div id="item-modal" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-lg bg-white rounded-3xl shadow-2xl z-[101] hidden opacity-0 transition-opacity duration-300 overflow-hidden flex-col max-h-[90vh] pointer-events-auto">
+            <div class="relative h-64 w-full bg-slate-100 flex-shrink-0">
+                <img id="modal-img" src="" alt="" class="w-full h-full object-cover">
+                <button id="modal-close" class="absolute top-4 right-4 w-10 h-10 bg-white/50 backdrop-blur-md rounded-full flex items-center justify-center text-slate-800 hover:bg-white transition-colors cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-8 overflow-y-auto">
+                <div class="flex justify-between items-center mb-3">
+                    <span id="modal-category" class="text-xs font-bold text-blue-600 uppercase tracking-wide">Category</span>
+                    <span id="modal-time" class="text-xs text-slate-400 font-sans">Time</span>
+                </div>
+                <h3 id="modal-title" class="font-display font-bold text-3xl text-slate-900 mb-4">Title</h3>
+                <p id="modal-desc" class="text-slate-600 font-sans mb-6">Description.</p>
+                <div class="flex items-center text-slate-600 text-sm font-sans mb-8 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <svg class="mr-3 text-slate-400 min-w-[16px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span id="modal-location">Location</span>
+                </div>
+                <button id="btn-is-this-yours" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-colors font-display shadow-lg shadow-blue-600/30">
+                    Is this your item?
+                </button>
+            </div>
+        </div>
+
+        <!-- Claim Form Modal -->
+        <div id="claim-modal" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-md bg-white rounded-3xl shadow-2xl z-[102] hidden opacity-0 transition-opacity duration-300 p-8 flex-col max-h-[90vh] pointer-events-auto">
+            <button id="claim-close" class="absolute top-4 right-4 w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-slate-200 transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+            <h3 class="font-display font-bold text-2xl text-slate-900 mb-2 mt-2">Claim <span id="claim-item-name" class="text-blue-600">Item</span></h3>
+            <p class="text-sm text-slate-500 font-sans mb-6">Please provide details to verify your ownership.</p>
+            
+            <div class="space-y-4 mb-8 overflow-y-auto pr-2">
+                <div>
+                    <label class="block text-xs uppercase tracking-wide text-slate-500 font-bold mb-2 font-display">How/when did you lose it?</label>
+                    <textarea id="claim-how" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-700 font-sans text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wide text-slate-500 font-bold mb-2 font-display">Proof of Ownership</label>
+                    <textarea id="claim-proof" rows="2" placeholder="Specific marks, contents, lock screen picture, etc." class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-700 font-sans text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all mb-3"></textarea>
+                    
+                    <div class="relative w-full border-2 border-dashed border-slate-300 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors py-3 px-4 text-center cursor-pointer overflow-hidden group">
+                        <input type="file" id="claim-proof-img" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
+                        <div class="flex flex-col items-center justify-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-500 transition-colors"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                            <span id="claim-proof-filename" class="text-xs text-slate-500 font-sans font-medium line-clamp-1">Upload an image as proof (optional)</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wide text-slate-500 font-bold mb-2 font-display">Your Contact Info</label>
+                    <input type="text" id="claim-contact" placeholder="Phone or Email" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-700 font-sans text-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 transition-all">
+                </div>
+            </div>
+            
+            <button id="btn-submit-claim" class="w-full mt-auto bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition-colors font-display shadow-lg">
+                Submit details
+            </button>
+        </div>
 
     </main>
 
@@ -1007,5 +1071,6 @@
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
